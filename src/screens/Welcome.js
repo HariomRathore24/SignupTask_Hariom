@@ -19,7 +19,7 @@ const Welcome = () => {
     </View>
 
       <View style={{width:'100%', alignItems:'center', justifyContent:'center', paddingHorizontal:40, }}>
-      <Text style={{fontSize:24, fontWeight:'600', width:"100%", marginBottom:10, color:'#808080', textAlign:'center'}}>Sparkle & Shine  Transform Your Drive with Every Wash!</Text>
+      <Text style={{fontSize:18, fontWeight:'600', width:"100%", marginBottom:10, color:'#808080', textAlign:'center'}}>Sparkle & Shine  Transform Your Drive with Every Wash!</Text>
       </View>
       
       <ImageBackground 
@@ -47,17 +47,10 @@ const Welcome = () => {
 };
 
 export default Welcome;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-  },
-  content: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingHorizontal: 20,
   },
   background: {
     position: 'absolute',
@@ -74,11 +67,11 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     alignItems: 'center',
-    marginTop:180
+    marginTop:120,
   },
   logo: {
-    width: 382,
-    height: 280,
+    width: 350,
+    height: 260,
   },
   signupButton: {
     marginTop: 40,

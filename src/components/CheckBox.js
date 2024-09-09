@@ -22,9 +22,9 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   checkbox: {
-    width: 20,
-    height: 20,
-    borderWidth: 2,
+    width: 16,
+    height: 16,
+    borderWidth: 1,
     borderColor: '#797979',
     borderRadius: 4,
     alignItems: 'center',
@@ -34,8 +34,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#797979',
   },
   checkIcon: {
-    width: 14,
-    height: 14,
+    width: 12,
+    height: 12,
   },
 });
 

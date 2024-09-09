@@ -36,7 +36,7 @@ const Signup = () => {
         Alert.alert('Error', response.data.message || 'Signup failed.');
       }
     } catch (error) {
-      // Log the error response for debugging
+
       console.error('Signup error:', error.response ? error.response.data : error.message);
       Alert.alert('Error', error.response?.data?.message || 'An error occurred. Please try again.');
     }
@@ -48,7 +48,7 @@ const Signup = () => {
         <Image source={require('../assets/logo.png')} style={styles.logo} />
       </View>
       <View style={{ paddingHorizontal: 20 }}>
-        <Text style={{ fontSize: 32, color: '#000000', fontWeight: '700', marginBottom: 5 }}>Sign Up</Text>
+        <Text style={{ fontSize: 24, color: '#000000', fontWeight: '700', marginBottom: 5 }}>Sign Up</Text>
         <Text style={{ fontSize: 16, fontWeight: '500', width: 288, marginBottom: 10 }}>Fill in the below form and add life to your car!</Text>
 
         <InputField
@@ -59,11 +59,11 @@ const Signup = () => {
           iconSource={require('../assets/user.png')}
         />
         <InputField
-          label="Phone" // Change label to Phone
+          label="Phone" 
           placeholder="Enter your phone number"
-          value={phone} // Change value to phone
-          onChangeText={setPhone} // Change onChangeText to setPhone
-          keyboardType="phone-pad" // Set keyboard type to phone-pad
+          value={phone} 
+          onChangeText={setPhone} 
+          keyboardType="phone-pad"
           iconSource={require('../assets/phone-call.png')}
         />
         <InputField
@@ -96,7 +96,7 @@ const Signup = () => {
             <Text style={[styles.loginText, styles.loginLink]}>Sign In</Text>
           </TouchableOpacity>
         </View>
-        <Text style={{ fontSize: 14, color: '#808080', fontWeight: "500", textAlign: 'center', fontFamily: 'Poppins', marginTop: 15 }}>By login or sign up, you agree to our terms of use and privacy policy</Text>
+        <Text style={{width:'100%', fontSize: 12, color: '#808080', fontWeight: "500", textAlign: 'center', fontFamily: 'Poppins', marginTop: 8 }}>By login or sign up, you agree to our terms of use and privacy policy</Text>
       </View>
     </View>
   );
@@ -119,30 +119,30 @@ const styles = StyleSheet.create({
   termsContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: 10,
+    marginVertical: 8,
   },
   termsText: {
-    fontSize: 16,
+    fontSize: 12,
     color: '#000000'
   },
   termsLink: {
     color: '#797979',
   },
   signupButton: {
-    marginTop: 20,
+    marginTop: 14,
   },
   loginContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginTop: 12,
+    marginTop: 8,
     alignItems: 'center'
   },
   loginText: {
-    fontSize: 14,
+    fontSize: 12,
     color: '#000000',
   },
   loginLink: {
-    fontSize: 16,
+    fontSize: 12,
     color: '#000000',
     fontWeight: 'bold',
   },

@@ -22,12 +22,12 @@ const InputField = ({ label, value, onChangeText, iconSource, placeholder ,...pr
 
 const styles = StyleSheet.create({
   inputContainer: {
-    marginVertical: 10,
+    marginVertical: 5
   },
   label: {
-    fontSize: 16,
+    fontSize: 12,
     fontWeight: 'bold',
-    marginBottom:4,
+    marginBottom:2,
     color:'#000000'
   },
   inputWrapper: {
@@ -36,11 +36,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 5,
-    padding: 10,
+    padding: 4,
   },
   icon: {
-    width: 20, 
-    height: 20, 
+    width: 16, 
+    height: 16, 
     marginRight: 10,
   },
   input: {

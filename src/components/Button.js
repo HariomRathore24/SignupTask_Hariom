@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     borderRadius: 32,
     borderColor: '#94C7FF',
     borderWidth: 1,
-    paddingVertical: 8,
+    paddingVertical: 6,
     paddingHorizontal: 16,
     elevation: 4, // For Android
     shadowColor: '#A3CFFF', // For iOS
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: '#092A4D',
-    fontSize: 24,
+    fontSize: 18,
     fontWeight: '700',
     textAlign: 'center',
   },

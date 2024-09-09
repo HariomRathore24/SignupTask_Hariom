@@ -18,10 +18,8 @@ const Signin = () => {
           });
       
           if (response.status === 200) {
-            // Assuming the name is in response.data.data.name
-            const userName = response.data.data.name; // Adjust this based on your API response structure
+            const userName = response.data.data.name; 
             console.log('Login successful:', response.data);
-            // Navigate to the desired screen after successful login
             navigation.navigate('Home', { userData: { name: userName } });
           } else {
             Alert.alert('Error', response.data.message || 'Login failed.');
@@ -42,8 +40,8 @@ const Signin = () => {
       </View>
       
       <View style={{paddingHorizontal:20}}>
-        <Text style={{fontSize:32, color:'#000000', fontWeight:'700', marginBottom:5}}>Sign In</Text>
-        <Text style={{fontSize:16, fontWeight:'500', width:200, marginBottom:10}}>Hi ! Welcome back, you have been missed </Text>
+        <Text style={{fontSize:24, color:'#000000', fontWeight:'700', marginBottom:2}}>Sign In</Text>
+        <Text style={{fontSize:14, fontWeight:'500', width:200, marginBottom:10}}>Hi ! Welcome back, you have been missed </Text>
       
         <InputField
           label="Phone" 
@@ -78,7 +76,7 @@ const Signin = () => {
     <View style={{ width: 120, borderWidth: 0.7, borderColor: '#A3CFFF' }} />
     </View>
 
-     <View style={{ flexDirection: "row", alignItems: "center" , justifyContent:'center', paddingVertical:10}}>
+     <View style={{ flexDirection: "row", alignItems: "center" , justifyContent:'center', paddingVertical:5}}>
         <TouchableOpacity >
             <Image source={require('../assets/google.png')}/>
         </TouchableOpacity>
@@ -94,11 +92,11 @@ const Signin = () => {
         </View>
         <Text style={{fontSize:14, color:'#808080', fontWeight:"500", textAlign:'center', fontFamily:'Poppins' , marginTop:15}}>By login or sign up, you agree to our terms of use and privacy policy</Text>
       </View>
-     <ImageBackground 
+     {/* <ImageBackground 
         source={require('../assets/mask-group1.png')} 
          style={styles.background}
          imageStyle={styles.backgroundImage}
-       />
+       /> */}
     </View>
   );
 };
@@ -111,7 +109,7 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     alignItems: 'center',
-    marginTop:20
+    marginTop:12
   },
   logo: {
     width: 233,
@@ -122,11 +120,11 @@ const styles = StyleSheet.create({
     justifyContent:'flex-end'
   },
   forgetText: {
-    fontSize: 14,
+    fontSize: 12,
     color:'#000000',
     fontWeight:"500",
     textAlign:'center',
-    lineHeight:21
+   
   },
  
   signupButton: {
@@ -139,11 +137,11 @@ const styles = StyleSheet.create({
     alignItems:'center'
   },
   loginText: {
-    fontSize: 14,
+    fontSize: 12,
     color: '#000000',
   },
   loginLink: {
-    fontSize:16,
+    fontSize:12,
     color: '#000000',
     fontWeight: 'bold',
   },
@@ -161,7 +159,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: -40,
     width: "80%",
-    height: 200, 
+    height: 120, 
   },
   backgroundImage: {
     position:'relative',
